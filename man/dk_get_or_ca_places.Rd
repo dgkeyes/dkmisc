@@ -2,10 +2,10 @@
 % Please edit documentation in R/dk_functions.R
 \name{dk_get_or_ca_places}
 \alias{dk_get_or_ca_places}
-\title{Title}
+\title{Title DK Get OR CA Places}
 \usage{
 dk_get_or_ca_places()
 }
 \description{
-Title
+Title DK Get OR CA Places
 }

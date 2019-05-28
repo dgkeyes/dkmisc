@@ -17,7 +17,7 @@ dk_get_tfff_basemap <- function() {
 }
 
 
-#' Title
+#' Title DK Theme
 #'
 #' @return
 #' @export
@@ -34,7 +34,7 @@ dk_theme <- function() {
 }
 
 
-#' Title
+#' Title DK Get OR CA Places
 #'
 #' @return
 #' @export

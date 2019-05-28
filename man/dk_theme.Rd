@@ -2,10 +2,10 @@
 % Please edit documentation in R/dk_functions.R
 \name{dk_theme}
 \alias{dk_theme}
-\title{Title}
+\title{Title DK Theme}
 \usage{
 dk_theme()
 }
 \description{
-Title
+Title DK Theme
 }
