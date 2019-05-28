@@ -8,6 +8,14 @@
 \description{
 David Keyes Personal R Package
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/dgkeyes/dkmisc}
+  \item Report bugs at \url{https://github.com/dgkeyes/dkmisc/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: David Keyes \email{hello@dgkeyes.com}
 
