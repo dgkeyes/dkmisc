@@ -12,12 +12,14 @@ dk_means_by_groups_and_total <- function(.data, group_by_var, mean_var){
 
      groups_summary <- .data %>%
           dplyr::group_by({{ group_by_var }}) %>%
-          dplyr::summarize(mean = mean({{ mean_var }})) %>%
+          dplyr::summarize(mean = mean({{ mean_var }},
+                                       na.rm = TRUE)) %>%
           dplyr::rename("group" = {{ group_by_var }} ) %>%
           dplyr::mutate(group = as.character(group))
 
      overall_summary <-.data %>%
-          dplyr::summarize(mean = mean({{ mean_var }})) %>%
+          dplyr::summarize(mean = mean({{ mean_var }},
+                                       na.rm = TRUE)) %>%
           dplyr::mutate(group = "Total")
 
      dplyr::bind_rows(groups_summary,
