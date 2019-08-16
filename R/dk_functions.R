@@ -6,14 +6,10 @@
 #' @examples
 dk_get_tfff_basemap <- function() {
 
-     library(tigris)
-     library(tidyverse)
-     library(janitor)
-
-     tfff_basemap <- counties(cb = T, class="sf") %>%
-          clean_names() %>%
-          filter(statefp == "41" | statefp == "06") %>%
-          filter(statefp == "41" | name == "Siskiyou")
+        tfff_basemap <- tigris::counties(cb = T, class="sf") %>%
+                clean_names() %>%
+                filter(statefp == "41" | statefp == "06") %>%
+                filter(statefp == "41" | name == "Siskiyou")
 }
 
 
@@ -24,13 +20,13 @@ dk_get_tfff_basemap <- function() {
 #'
 #' @examples
 dk_theme <- function() {
-     library(ggplot2)
+        library(ggplot2)
 
-     theme_minimal() +
-          theme(axis.title = element_blank(),
-                legend.position = "none",
-                text = element_text(family = "Karla",
-                                    face = "bold"))
+        theme_minimal() +
+                theme(axis.title = element_blank(),
+                      legend.position = "none",
+                      text = element_text(family = "Karla",
+                                          face = "bold"))
 }
 
 
@@ -41,18 +37,14 @@ dk_theme <- function() {
 #'
 #' @examples
 dk_get_or_ca_places <- function() {
-        library(tigris)
-        library(tidyverse)
-        library(sf)
-        library(janitor)
 
         options(tigris_class = "sf")
 
-        or_communities <- places(state = "OR",
+        or_communities <- tigris::places(state = "OR",
                                  cb = TRUE) %>%
                 st_centroid()
 
-        ca_communities <- places(state = "CA",
+        ca_communities <- tigris::places(state = "CA",
                                  cb = TRUE) %>%
                 st_centroid()
 

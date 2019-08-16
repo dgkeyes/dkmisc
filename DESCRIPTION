@@ -11,5 +11,9 @@ License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Imports: 
+    tidyverse,
+    tigris,
+    sf
 URL: https://github.com/dgkeyes/dkmisc
 BugReports: https://github.com/dgkeyes/dkmisc/issues
