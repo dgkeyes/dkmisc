@@ -16,6 +16,7 @@ Imports:
     janitor,
     dplyr,
     tigris,
-    magrittr
+    magrittr,
+    opencage
 URL: https://github.com/dgkeyes/dkmisc
 BugReports: https://github.com/dgkeyes/dkmisc/issues
